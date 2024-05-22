@@ -1,0 +1,35 @@
+log_level = "INFO"
+
+[classifier]
+# Determines which camera to use.
+camera_index = 0
+
+# The frequency in Hz for how often a frame should
+# be captured.
+frame_frequency = 5
+
+# Front facing detection settings.
+front_scale_factor = 1.1
+front_min_neighbors = 7
+front_min_size = "40x40"
+
+# Side facing detection settings.
+# These affect both left and right facing detections.
+side_scale_factor = 1.3
+side_min_neighbors = 7
+side_min_size = "40x40"
+
+
+[mic]
+# The key combination to send when present.
+present_mic_keys = "CTRL ALT SHIFT A"
+
+# The key combination to send when absent.
+absent_mic_keys = "CTRL ALT SHIFT B"
+
+# How long to wait when no face is detected before
+# considering the user to be absent.
+seconds_before_absent = 5
+
+
+
